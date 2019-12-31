@@ -1,0 +1,64 @@
+<app-score-display class="score-container"></app-score-display>
+<div class="field-container">
+  <table>
+    <tr>
+      <td>
+        <button type="button" class="field" (click)=clickOnPosition(0)
+          [ngClass]="{'player-one-class': fieldState[0].player == 0, 'player-two-class': fieldState[0].player == 1}"></button>
+      </td>
+      <td>|</td>
+      <td><button type="button" class="field" (click)=clickOnPosition(1)
+          [ngClass]="{'player-one-class': fieldState[1].player == 0, 'player-two-class': fieldState[1].player == 1}"></button>
+      </td>
+      <td>|</td>
+      <td><button type="button" class="field" (click)=clickOnPosition(2)
+          [ngClass]="{'player-one-class': fieldState[2].player == 0, 'player-two-class': fieldState[2].player == 1}"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" class="field" (click)=clickOnPosition(3)
+          [ngClass]="{'player-one-class': fieldState[3].player == 0, 'player-two-class': fieldState[3].player == 1}"></button>
+      </td>
+      <td>|</td>
+      <td><button type="button" class="field" (click)=clickOnPosition(4)
+          [ngClass]="{'player-one-class': fieldState[4].player == 0, 'player-two-class': fieldState[4].player == 1}"></button>
+      </td>
+      <td>|</td>
+      <td><button type="button" class="field" (click)=clickOnPosition(5)
+          [ngClass]="{'player-one-class': fieldState[5].player == 0, 'player-two-class': fieldState[5].player == 1}"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" class="field" (click)=clickOnPosition(6)
+          [ngClass]="{'player-one-class': fieldState[6].player == 0, 'player-two-class': fieldState[6].player == 1}"></button>
+      </td>
+      <td>|</td>
+      <td><button type="button" class="field" (click)=clickOnPosition(7)
+          [ngClass]="{'player-one-class': fieldState[7].player == 0, 'player-two-class': fieldState[7].player == 1}"></button>
+      </td>
+      <td>|</td>
+      <td><button type="button" class="field" (click)=clickOnPosition(8)
+          [ngClass]="{'player-one-class': fieldState[8].player == 0, 'player-two-class': fieldState[8].player == 1}"></button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="buttons-container">
+  <button (click)=restartGame()>Restart</button>
+</div>

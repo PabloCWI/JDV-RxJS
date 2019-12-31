@@ -1,0 +1,34 @@
+.field-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  tr {
+    td {
+      button {
+        width: 25px;
+        height: 25px;
+      }
+      button.player-one-class {
+        background-color: blue;
+      }
+      button.player-two-class {
+        background-color: greenyellow;
+      }
+    }
+  }
+}
+
+.buttons-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

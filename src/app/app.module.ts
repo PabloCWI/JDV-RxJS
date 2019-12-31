@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { MainComponent } from './main.component';
+import { FieldManagerComponent } from './field-manager/field-manager.component';
+import { LogicControllerComponent } from './logic-controller/logic-controller.component';
+import { RenderManagerComponent } from './render-manager/render-manager.component';
+import { ScoreDisplayComponent } from './score-display/score-display.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    MainComponent,
+    FieldManagerComponent,
+    LogicControllerComponent,
+    RenderManagerComponent,
+    ScoreDisplayComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    RenderManagerComponent,
+    LogicControllerComponent,
+    FieldManagerComponent
+  ],
+  bootstrap: [MainComponent]
 })
 export class AppModule { }
